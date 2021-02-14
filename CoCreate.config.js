@@ -9,7 +9,7 @@ module.exports = {
     sources: [{
             path: "./docs/index.html",
             collection: "files",
-            document_id: "",
+            document_id: "6029923de979fb17407e25c3",
             key: "html",
             data:{
                 name: "Plaid Doc",
@@ -19,10 +19,10 @@ module.exports = {
    
     crud: [{
             collection: "routes",
-            document_id: "",
+            document_id: "6029923de979fb17407e25c2",
             data:{
                 collection: "files",
-                document_id: "",
+                document_id: "6029923de979fb17407e25c3",
                 name: "html",
                 domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
                 route: "/docs/plaid",
