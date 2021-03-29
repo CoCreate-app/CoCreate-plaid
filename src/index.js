@@ -17,7 +17,7 @@ const CoCreatePlaid = {
 		  token: data.data.data.link_token,
 		  env: 'sandbox',
 		  onSuccess: async function(public_token, metadata){
-		     CoCreateApi.send('plaid', 'plaidGetAccessToken', public_token);
+		     CoCreate.api.send('plaid', 'plaidGetAccessToken', public_token);
 		  },
 		  onExit: async function(err, metadata) {
 		     if (err != null) {
@@ -43,7 +43,7 @@ const CoCreatePlaid = {
 	}
 }
 
-CoCreate.api.init({
+api.init({
 	name: CoCreatePlaid.id, 
 	module:	CoCreatePlaid,
 });
