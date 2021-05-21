@@ -1,49 +1,14 @@
-const CoCreatePlaid = {
-	id: 'plaid',
-	actions: [
-		'plaidGetLinkToken',
-		'plaidGetPublicToken',
-		'plaidTransaction',
-		'plaidBalances',
-		'plaidAuth',
-	],
-	
-	render_plaidCreateBankLink: function(data) {
-		console.log(data);
-	},
-	
-	action_plaidGetPublicToken: function(element, data){
-		const configs = {
-		  token: data.data.data.link_token,
-		  env: 'sandbox',
-		  onSuccess: async function(public_token, metadata){
-		     CoCreate.api.send('plaid', 'plaidGetAccessToken', public_token);
-		  },
-		  onExit: async function(err, metadata) {
-		     if (err != null) {
-		         console.log(err);
-		         console.log(metadata);   
-		     }
-		  }
-		}
-		const linkHandler = Plaid.create(configs);
-		linkHandler.open();
-	},
-	
-	render_plaidTransaction: function(data) {
-		console.log(data);
-	},
-	
-	render_plaidBalances: function(data) {
-		console.log(data);
-	},
-	
-	render_plaidAuth: function(data) {
-		console.log(data);
-	}
-}
-
-api.init({
-	name: CoCreatePlaid.id, 
-	module:	CoCreatePlaid,
-});
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(["./client"], function(CoCreatePlaid) {
+        	return factory(CoCreatePlaid)
+        });
+    } else if (typeof module === 'object' && module.exports) {
+      const CoCreatePlaid = require("./server.js")
+      module.exports = factory(CoCreatePlaid);
+    } else {
+        root.returnExports = factory(root["./client.js"]);
+  }
+}(typeof self !== 'undefined' ? self : this, function (CoCreatePlaid) {
+  return CoCreatePlaid;
+}));

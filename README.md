@@ -9,7 +9,7 @@ A simple plaid component in vanilla javascript. Easily configured using HTML5 da
 
 ![CoCreate-plaid](https://cdn.cocreate.app/docs/CoCreate-plaid.gif)
 
-## [Docs & Demo](https://cocreate.app/docs/clone)
+## [Docs & Demo](https://cocreate.app/docs/plaid)
 
 For a complete guide and working demo refer to the [doumentation](https://cocreate.app/docs/plaid)
 
