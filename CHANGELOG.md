@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.2...v1.0.3) (2021-06-16)
+
+
+### Bug Fixes
+
+* added header for seo ([46490b9](https://github.com/CoCreate-app/CoCreate-plaid/commit/46490b96613e308f5397ab6adacaf9d807423316))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.1...v1.0.2) (2021-06-06)
 
 
