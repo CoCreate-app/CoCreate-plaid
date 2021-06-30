@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.7...v1.0.8) (2021-06-30)
+
+
+### Bug Fixes
+
+* Update readme.md ([dc6715b](https://github.com/CoCreate-app/CoCreate-plaid/commit/dc6715bf1f2210138b7a797f201832239b90ee3d))
+
 ## [1.0.7](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.6...v1.0.7) (2021-06-30)
 
 
