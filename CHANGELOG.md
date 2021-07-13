@@ -1,3 +1,11 @@
+## [1.0.10](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.9...v1.0.10) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([9253cff](https://github.com/CoCreate-app/CoCreate-plaid/commit/9253cff350d06d530d886e38a2ab7965ba5f66d2))
+* remove yarn.lock ([afcc590](https://github.com/CoCreate-app/CoCreate-plaid/commit/afcc59086ee73fc202818e42ecba3c422817239e))
+
 ## [1.0.9](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.8...v1.0.9) (2021-07-10)
 
 
