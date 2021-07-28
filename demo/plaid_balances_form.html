@@ -14,14 +14,14 @@
 
 <form>
     AccssToken: <input data-plaid='plaidBalances.accessToken' value='access-sandbox-60d0a921-dfc3-445e-97be-bd8abc80d219'></input>
-    <button data-actions='plaidBalances'>Plaid Balances</button>
+    <button actions='plaidBalances'>Plaid Balances</button>
 </form>
 
-<div data-template_id="plaidBalances" >
+<div template_id="plaidBalances" >
   <div class="template card card margin:10px " 
     data-value="{{data._id}}" 
-    data-template_id="plaidTransaction" 
-    data-render_array="data">
+    template_id="plaidTransaction" 
+    render-array="data">
         <div class="display:flex justify-content:space-between align-items:center width:100%">
           <div class="display:flex">
             <div class="display:flex align-items:center">
