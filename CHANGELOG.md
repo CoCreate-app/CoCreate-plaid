@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.12...v1.1.0) (2021-07-28)
+
+
+### Bug Fixes
+
+* remove data- from fetch, pass and filter ([7012c27](https://github.com/CoCreate-app/CoCreate-plaid/commit/7012c27cb93c5dc2007ca05d262d9e4a8a0ff5a5))
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([178ce74](https://github.com/CoCreate-app/CoCreate-plaid/commit/178ce740df6af05c02ac90ad4e3060c29bf293c6))
+
 ## [1.0.12](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.11...v1.0.12) (2021-07-17)
 
 
