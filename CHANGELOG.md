@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.0...v1.1.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* remove data- from attributes ([581d85a](https://github.com/CoCreate-app/CoCreate-plaid/commit/581d85a88ae142aade7303248aae83d0c0e82ce2))
+* update data-fullscreen to fullscreen ([f377dd3](https://github.com/CoCreate-app/CoCreate-plaid/commit/f377dd36128eb7dbaca84a9e996ece0baf9f48e3))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.0.12...v1.1.0) (2021-07-28)
 
 
