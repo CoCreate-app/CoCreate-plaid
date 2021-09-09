@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.9...v1.1.10) (2021-09-09)
+
+
+### Bug Fixes
+
+* CoCreate.config directory, path, name and  public ([78096f6](https://github.com/CoCreate-app/CoCreate-plaid/commit/78096f6b880f155f0ce2c737a648a3381ebf7e2e))
+
 ## [1.1.9](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.8...v1.1.9) (2021-09-08)
 
 
