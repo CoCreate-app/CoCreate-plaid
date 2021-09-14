@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.14...v1.1.15) (2021-09-14)
+
+
+### Bug Fixes
+
+* add cocreate.app to domains ([9263201](https://github.com/CoCreate-app/CoCreate-plaid/commit/926320198c257a8067064a87140695b036da6949))
+
 ## [1.1.14](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.13...v1.1.14) (2021-09-13)
 
 
