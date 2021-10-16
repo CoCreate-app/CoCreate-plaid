@@ -1,3 +1,10 @@
+## [1.1.29](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.28...v1.1.29) (2021-10-16)
+
+
+### Bug Fixes
+
+* update socket package to fix bug in docs ([cf88799](https://github.com/CoCreate-app/CoCreate-plaid/commit/cf887995276f2bb3d2e4d48dfa6c70c895031da3))
+
 ## [1.1.28](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.27...v1.1.28) (2021-10-15)
 
 
