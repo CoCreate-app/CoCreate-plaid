@@ -1,3 +1,10 @@
+## [1.1.33](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.32...v1.1.33) (2021-11-03)
+
+
+### Bug Fixes
+
+* update dependencies ([10f2f3b](https://github.com/CoCreate-app/CoCreate-plaid/commit/10f2f3b5dfebd36101c287a2b58ec4730dff2d95))
+
 ## [1.1.32](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.31...v1.1.32) (2021-11-01)
 
 
