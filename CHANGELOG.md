@@ -1,3 +1,10 @@
+## [1.1.42](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.41...v1.1.42) (2021-11-20)
+
+
+### Bug Fixes
+
+* updated script tags and link tags ([928e7fb](https://github.com/CoCreate-app/CoCreate-plaid/commit/928e7fb72304a3ee8f7dd200e97c57a4685bca84))
+
 ## [1.1.41](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.40...v1.1.41) (2021-11-20)
 
 
