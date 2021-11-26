@@ -1,3 +1,10 @@
+## [1.1.45](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.44...v1.1.45) (2021-11-26)
+
+
+### Bug Fixes
+
+* add nav and sidenav to docs ([e0b27de](https://github.com/CoCreate-app/CoCreate-plaid/commit/e0b27deb3c9e8f64a521ec472c960f7341c2d777))
+
 ## [1.1.44](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.43...v1.1.44) (2021-11-26)
 
 
