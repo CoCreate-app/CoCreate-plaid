@@ -1,3 +1,10 @@
+## [1.1.51](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.50...v1.1.51) (2022-01-01)
+
+
+### Bug Fixes
+
+* removed data- from attributes ([deb637c](https://github.com/CoCreate-app/CoCreate-plaid/commit/deb637cf60bef346813f0248f4656c8bb5db8341))
+
 ## [1.1.50](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.49...v1.1.50) (2021-12-15)
 
 
