@@ -1,3 +1,10 @@
+## [1.1.52](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.51...v1.1.52) (2022-01-01)
+
+
+### Bug Fixes
+
+* get-value attribute value now supports a selector added # to all values currently in get-value attributes ([c8b046e](https://github.com/CoCreate-app/CoCreate-plaid/commit/c8b046eefcafe16cc6cc48613f5c97e7e859f598))
+
 ## [1.1.51](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.50...v1.1.51) (2022-01-01)
 
 
