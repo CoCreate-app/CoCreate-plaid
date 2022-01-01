@@ -13,13 +13,13 @@
 <h1>Plaid-Transaction</h1>
 
 <form>
-    AccssToken: <input data-plaid='plaidTransaction.accessToken' value='access-sandbox-60d0a921-dfc3-445e-97be-bd8abc80d219'></input>
+    AccssToken: <input plaid='plaidTransaction.accessToken' value='access-sandbox-60d0a921-dfc3-445e-97be-bd8abc80d219'></input>
     <button actions='plaidTransaction'>Plaid Transaction</button>
 </form>
 
 <div template_id="plaidTransaction" >
   <div class="template card card margin:10px " 
-    data-value="{{data._id}}" 
+    value="{{data._id}}" 
     template_id="plaidTransaction" 
     render-array="data">
         <div class="display:flex justify-content:space-between align-items:center width:100%">

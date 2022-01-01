@@ -7,16 +7,16 @@
     <h1>Plad Auth</h1>
     
 <form>
-  UserId: <input data-plaid='plaidGetLinkToken.userId' value='1000'></input>
-  LegalName: <input data-plaid='plaidGetLinkToken.legalName' value='Michle'></input>
-  PhoneNumber: <input data-plaid='plaidGetLinkToken.phoneNumber' value='+1 415 555 0123'></input>
-  Email: <input data-plaid='plaidGetLinkToken.email' value='topfreelancer81@gmail.com'></input>
+  UserId: <input plaid='plaidGetLinkToken.userId' value='1000'></input>
+  LegalName: <input plaid='plaidGetLinkToken.legalName' value='Michle'></input>
+  PhoneNumber: <input plaid='plaidGetLinkToken.phoneNumber' value='+1 415 555 0123'></input>
+  Email: <input plaid='plaidGetLinkToken.email' value='topfreelancer81@gmail.com'></input>
 	<button actions='plaidGetLinkToken,plaidGetPublicToken'>CreateBankLink</button>
 </form>
 
 <div template_id="plaidGetAccessToken" >
   <div class="template card card margin:10px " 
-    data-value="{{data._id}}" 
+    value="{{data._id}}" 
     template_id="plaidGetAccessToken" 
     render-array="data">
         <div class="display:flex justify-content:space-between align-items:center width:100%">
@@ -26,7 +26,7 @@
             </div>
             <div class="display:flex align-items:center  flex-wrap:wrap">
               <form>
-                Access Token: <input class="width:300px" data-plaid="plaidAuth.accessToken" value="{{data.access_token}}"></input>
+                Access Token: <input class="width:300px" plaid="plaidAuth.accessToken" value="{{data.access_token}}"></input>
                 <button actions='plaidAuth'>Plaid Auth</button>
               </form>
             </div>
@@ -37,7 +37,7 @@
 
 <div template_id="plaidAuth" >
   <div class="template card card margin:10px " 
-    data-value="{{data._id}}" 
+    value="{{data._id}}" 
     template_id="plaidAuth" 
     render-array="data">
         <div class="display:flex justify-content:space-between align-items:center width:100%">
