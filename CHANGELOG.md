@@ -1,3 +1,10 @@
+## [1.1.54](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.53...v1.1.54) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([4b48074](https://github.com/CoCreate-app/CoCreate-plaid/commit/4b48074350e91fab92da4aa88c40def2549acdad))
+
 ## [1.1.53](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.52...v1.1.53) (2022-02-01)
 
 
