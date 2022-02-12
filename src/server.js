@@ -24,10 +24,10 @@ class CoCreatePlaid {
        
         try{
       	       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
-               let org_row = await api.getOrg(params,this.module_id);
+               let org = await api.getOrg(params,this.module_id);
                client = new plaid.Client({
-                    clientID: org_row['apis.'+this.module_id+'.'+enviroment+'.clientID'],
-                    secret: org_row['apis.'+this.module_id+'.'+enviroment+'.secret'],
+                    clientID: org['apis.'+this.module_id+'.'+enviroment+'.clientID'],
+                    secret: org['apis.'+this.module_id+'.'+enviroment+'.secret'],
                     env: plaid.environments.sandbox,
                 });
       	 }catch(e){
