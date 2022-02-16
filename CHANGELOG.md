@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.56...v1.2.0) (2022-02-16)
+
+
+### Bug Fixes
+
+* update param name org_row to org ([bd3110e](https://github.com/CoCreate-app/CoCreate-plaid/commit/bd3110ec4404b85dec663e04e53fe4fdc10bdf82))
+
+
+### Features
+
+* define request and response functions, if functions are not deifne defualt functions exist that will request and render results. Reduced and improved code quality ([f11a70a](https://github.com/CoCreate-app/CoCreate-plaid/commit/f11a70a5fdd926a6459ba1017790505fe2563960))
+
 ## [1.1.56](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.1.55...v1.1.56) (2022-02-10)
 
 
