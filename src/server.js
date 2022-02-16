@@ -5,14 +5,14 @@ const plaid = require('plaid');
 class CoCreatePlaid {
     constructor(wsManager) {
         this.wsManager = wsManager;
-        this.module_id = 'plaid';
+        this.moduleName = 'plaid';
         this.enviroment = 'test';
         this.init();
     }
 
     init() {
         if (this.wsManager) {
-            this.wsManager.on(this.module_id, (socket, data) => this.sendCreateBank(socket, data));
+            this.wsManager.on(this.moduleName, (socket, data) => this.sendCreateBank(socket, data));
         }
     }
 
@@ -24,14 +24,14 @@ class CoCreatePlaid {
        
         try{
       	       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
-               let org = await api.getOrg(params,this.module_id);
+               let org = await api.getOrg(params,this.moduleName);
                client = new plaid.Client({
-                    clientID: org['apis.'+this.module_id+'.'+enviroment+'.clientID'],
-                    secret: org['apis.'+this.module_id+'.'+enviroment+'.secret'],
+                    clientID: org['apis.'+this.moduleName+'.'+enviroment+'.clientID'],
+                    secret: org['apis.'+this.moduleName+'.'+enviroment+'.secret'],
                     env: plaid.environments.sandbox,
                 });
       	 }catch(e){
-      	   	console.log(this.module_id+" : Error Connect to api",e)
+      	   	console.log(this.moduleName+" : Error Connect to api",e)
       	   	return false;
       	 }
 
@@ -87,10 +87,10 @@ class CoCreatePlaid {
                 language: 'en',
                 webhook: 'https://webhook.sample.com',
             });
-            api.send_response(this.wsManager, socket, { "type": type, "response": { "data": tokenResponse } }, this.module_id)
+            api.send_response(this.wsManager, socket, { "type": type, "response": { "data": tokenResponse } }, this.moduleName)
         } catch (e) {
             console.log(e)
-            return api.handleError(this.wsManager,socket, type, e.message,this.module_id);
+            return api.handleError(this.wsManager,socket, type, e.message,this.moduleName);
             //return api.send_error({ error: e.message });
         }
     }
@@ -99,7 +99,7 @@ class CoCreatePlaid {
         console.log("plaidGetAccessToke",data)
         let public_token = data;
         const accessTokenResponse = await client.exchangePublicToken(public_token);
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": accessTokenResponse } }, this.module_id)
+        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": accessTokenResponse } }, this.moduleName)
     }
 
     async pladTransaction(socket, type, client, params) {
@@ -109,7 +109,7 @@ class CoCreatePlaid {
                 console.error(err.message);
             });
         const transactions = response.transactions;
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": transactions } }, this.module_id)
+        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": transactions } }, this.moduleName)
     }
 
     async plaidBalances(socket, type, client, params) {
@@ -119,7 +119,7 @@ class CoCreatePlaid {
                 console.error(err.message);
             });
         const balances = (typeof (response) != 'undefined') ? response.accounts : [];
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": balances } }, this.module_id)
+        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": balances } }, this.moduleName)
     }
 
     async plaidAuth(socket, type, client, params) {
@@ -129,7 +129,7 @@ class CoCreatePlaid {
                 console.error(err.message);
             });
         const auth = response.numbers.ach;
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": auth } }, this.module_id)
+        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": auth } }, this.moduleName)
     }
 }
 

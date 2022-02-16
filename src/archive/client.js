@@ -1,6 +1,6 @@
 import api from '@cocreate/api'
 const CoCreatePlaid = {
-	id: 'plaid',
+	name: 'plaid',
 	actions: [
 		'plaidGetLinkToken',
 		'plaidGetPublicToken',
@@ -45,6 +45,6 @@ const CoCreatePlaid = {
 }
 
 api.init({
-	name: CoCreatePlaid.id, 
+	name: CoCreatePlaid.name, 
 	module:	CoCreatePlaid,
 });
