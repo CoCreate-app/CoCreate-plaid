@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.1...v1.2.2) (2022-02-24)
+
+
+### Bug Fixes
+
+* CoCreate.config replace CoCreate.app with * ([bcb3c9c](https://github.com/CoCreate-app/CoCreate-plaid/commit/bcb3c9c5328d4c1fbe6549139488af905ad314c8))
+* get environemt and keys using dot notation ([b72d15f](https://github.com/CoCreate-app/CoCreate-plaid/commit/b72d15fb672d56f22e5b2c4a0bccf35964e7a0d2))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.0...v1.2.1) (2022-02-16)
 
 
