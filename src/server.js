@@ -1,64 +1,83 @@
 'use strict'
 const api = require('@cocreate/api');
-const plaid = require('plaid');
+// const plaid = require('plaid');
 
 class CoCreatePlaid {
     constructor(wsManager) {
         this.wsManager = wsManager;
         this.moduleName = 'plaid';
-        this.enviroment = 'test';
         this.init();
     }
 
     init() {
         if (this.wsManager) {
-            this.wsManager.on(this.moduleName, (socket, data) => this.sendCreateBank(socket, data));
+            this.wsManager.on(this.moduleName, (socket, data) => this.sendPlaid(socket, data));
         }
     }
 
-    async sendCreateBank(socket, data) {
-        const type = data['type'];
-        let params = data['data'];
-        const plaid = require('plaid');
-        var client = null;
+    async sendPlaid(socket, data) {
+		let params = data['data'];
+		let environment;
+		let action = data['action'];
+        let plaid = false;
+        const plaidInst = require('plaid');
        
         try{
-      	       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
-               let org = await api.getOrg(params,this.moduleName);
-               client = new plaid.Client({
-                    clientID: org['apis.'+this.moduleName+'.'+enviroment+'.clientID'],
-                    secret: org['apis.'+this.moduleName+'.'+enviroment+'.secret'],
-                    env: plaid.environments.sandbox,
-                });
+			let org = await api.getOrg(data, this.moduleName);
+			if (params.environment){
+				environment = params['environment'];
+				delete params['environment'];  
+			} else {
+			  	environment = org.apis[this.moduleName].environment;
+			}
+            plaid = new plaidInst.Client({
+                clientID: org.apis[this.moduleName][environment].clientID,
+                secret: org.apis[this.moduleName][environment].secret,
+                env: plaid.environments.sandbox,
+            });
       	 }catch(e){
       	   	console.log(this.moduleName+" : Error Connect to api",e)
       	   	return false;
       	 }
-
-        params = data['data']["data"];
-        switch (type) {
-            case 'plaidGetLinkToken':
-                this.plaidGetLinkToken(socket, type, client, params);
-                break;
-            case 'plaidGetPublicToken':
-                this.plaidGetPublicToken(socket, type, client);
-            case 'plaidGetAccessToken':
-                this.plaidGetAccessToken(socket, type, client, params);
-            case 'plaidTransaction':
-                this.pladTransaction(socket, type, client, params);
-                break;
-            case 'plaidBalances':
-                this.plaidBalances(socket, type, client, params);
-                break;
-            case 'plaidAuth':
-                this.plaidAuth(socket, type, client, params);
-                break;
-            default:
-                break;
+        
+        try {
+            let response
+            switch (action) {
+                case 'plaidGetLinkToken':
+                    response = this.plaidGetLinkToken(socket, action, client, params);
+                    break;
+                case 'plaidGetPublicToken':
+                    response = this.plaidGetPublicToken(socket, action, client);
+                case 'plaidGetAccessToken':
+                    response = this.plaidGetAccessToken(socket, action, client, params);
+                case 'plaidTransaction':
+                    response = this.pladTransaction(socket, action, client, params);
+                    break;
+                case 'plaidBalances':
+                    response = this.plaidBalances(socket, action, client, params);
+                    break;
+                case 'plaidAuth':
+                    response = this.plaidAuth(socket, action, client, params);
+                    break;
+                default:
+                    break;
+            }
+            this.wsManager.send(socket, this.moduleName, { action, response })
+    
+        } catch (error) {
+          this.handleError(socket, action, error)
         }
     }
 
-    async plaidGetLinkToken(socket, type, client, params) {
+    handleError(socket, action, error) {
+        const response = {
+            'object': 'error',
+            'data': error || error.response || error.response.data || error.response.body || error.message || error,
+        };
+        this.wsManager.send(socket, this.moduleName, { action, response })
+    }
+
+    async plaidGetLinkToken(client, params) {
         const { userId, legalName, phoneNumber, email } = params;
         try {
             console.log({
@@ -74,7 +93,7 @@ class CoCreatePlaid {
                 language: 'en',
                 webhook: 'https://webhook.sample.com',
             })
-            const tokenResponse = await client.createLinkToken({
+            const response = await client.createLinkToken({
                 user: {
                     client_user_id: userId,
                     legal_name: legalName,
@@ -87,49 +106,44 @@ class CoCreatePlaid {
                 language: 'en',
                 webhook: 'https://webhook.sample.com',
             });
-            api.send_response(this.wsManager, socket, { "type": type, "response": { "data": tokenResponse } }, this.moduleName)
+            return response
         } catch (e) {
             console.log(e)
-            return api.handleError(this.wsManager,socket, type, e.message,this.moduleName);
-            //return api.send_error({ error: e.message });
         }
     }
 
-    async plaidGetAccessToken(socket, type, client, data) {
+    async plaidGetAccessToken(client, data) {
         console.log("plaidGetAccessToke",data)
         let public_token = data;
-        const accessTokenResponse = await client.exchangePublicToken(public_token);
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": accessTokenResponse } }, this.moduleName)
+        const response = await client.exchangePublicToken(public_token);
+        return response
     }
 
-    async pladTransaction(socket, type, client, params) {
+    async pladTransaction(client, params) {
         const { accessToken } = params;
         const response = await client.getTransactions(accessToken, '2018-01-01', '2020-02-01', {})
             .catch((err) => {
                 console.error(err.message);
             });
-        const transactions = response.transactions;
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": transactions } }, this.moduleName)
+        return response
     }
 
-    async plaidBalances(socket, type, client, params) {
+    async plaidBalances(client, params) {
         const { accessToken } = params;
         const response = await client.getBalance(accessToken)
             .catch((err) => {
                 console.error(err.message);
             });
-        const balances = (typeof (response) != 'undefined') ? response.accounts : [];
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": balances } }, this.moduleName)
+        return response
     }
 
-    async plaidAuth(socket, type, client, params) {
+    async plaidAuth(client, params) {
         const { accessToken } = params;
         const response = await client.getAuth(accessToken)
             .catch((err) => {
                 console.error(err.message);
             });
-        const auth = response.numbers.ach;
-        api.send_response(this.wsManager, socket, { "type": type, "response": { "data": auth } }, this.moduleName)
+            return response
     }
 }
 
