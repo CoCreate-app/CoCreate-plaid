@@ -5,13 +5,13 @@ const api = require('@cocreate/api');
 class CoCreatePlaid {
     constructor(wsManager) {
         this.wsManager = wsManager;
-        this.moduleName = 'plaid';
+        this.name = 'plaid';
         this.init();
     }
 
     init() {
         if (this.wsManager) {
-            this.wsManager.on(this.moduleName, (socket, data) => this.sendPlaid(socket, data));
+            this.wsManager.on(this.name, (socket, data) => this.sendPlaid(socket, data));
         }
     }
 
@@ -23,20 +23,20 @@ class CoCreatePlaid {
         const plaidInst = require('plaid');
        
         try{
-			let org = await api.getOrg(data, this.moduleName);
+			let org = await api.getOrg(data, this.name);
 			if (params.environment){
 				environment = params['environment'];
 				delete params['environment'];  
 			} else {
-			  	environment = org.apis[this.moduleName].environment;
+			  	environment = org.apis[this.name].environment;
 			}
             plaid = new plaidInst.Client({
-                clientID: org.apis[this.moduleName][environment].clientID,
-                secret: org.apis[this.moduleName][environment].secret,
+                clientID: org.apis[this.name][environment].clientID,
+                secret: org.apis[this.name][environment].secret,
                 env: plaid.environments.sandbox,
             });
       	 }catch(e){
-      	   	console.log(this.moduleName+" : Error Connect to api",e)
+      	   	console.log(this.name+" : Error Connect to api",e)
       	   	return false;
       	 }
         
@@ -62,7 +62,7 @@ class CoCreatePlaid {
                 default:
                     break;
             }
-            this.wsManager.send(socket, this.moduleName, { action, response })
+            this.wsManager.send(socket, this.name, { action, response })
     
         } catch (error) {
           this.handleError(socket, action, error)
@@ -74,7 +74,7 @@ class CoCreatePlaid {
             'object': 'error',
             'data': error || error.response || error.response.data || error.response.body || error.message || error,
         };
-        this.wsManager.send(socket, this.moduleName, { action, response })
+        this.wsManager.send(socket, this.name, { action, response })
     }
 
     async plaidGetLinkToken(client, params) {

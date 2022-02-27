@@ -33,5 +33,5 @@ const CoCreatePlaid = {
 
 api.init({
 	name: CoCreatePlaid.name, 
-	module:	CoCreatePlaid,
+	component:	CoCreatePlaid,
 });
