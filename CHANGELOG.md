@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.2...v1.2.3) (2022-02-27)
+
+
+### Bug Fixes
+
+* update param  module to component ([2390cb8](https://github.com/CoCreate-app/CoCreate-plaid/commit/2390cb86f94c4db622a4c18abe49cfce2b05d56a))
+
 ## [1.2.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.1...v1.2.2) (2022-02-24)
 
 
