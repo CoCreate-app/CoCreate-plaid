@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.3...v1.2.4) (2022-05-06)
+
+
+### Bug Fixes
+
+* update config organization_Id to organization_id ([1125792](https://github.com/CoCreate-app/CoCreate-plaid/commit/11257923f6d3a64cfc2c13206a64500ff8cdd98e))
+
 ## [1.2.3](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.2...v1.2.3) (2022-02-27)
 
 
