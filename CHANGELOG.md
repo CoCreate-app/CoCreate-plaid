@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.8...v1.2.9) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([d693596](https://github.com/CoCreate-app/CoCreate-plaid/commit/d693596118e275e384a55418104a16ed32d2e413))
+
 ## [1.2.8](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.7...v1.2.8) (2022-09-01)
 
 
