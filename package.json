@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@cocreate/api": "^1.3.5",
-    "@cocreate/docs": "^1.3.5",
+    "@cocreate/docs": "^1.3.8",
     "plaid": "^8.4.0"
   }
 }
