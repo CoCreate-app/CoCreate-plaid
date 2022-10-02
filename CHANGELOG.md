@@ -1,3 +1,10 @@
+## [1.2.16](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.15...v1.2.16) (2022-10-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/hosting and @cocreate/socket-client ([cd399c6](https://github.com/CoCreate-app/CoCreate-plaid/commit/cd399c689db4b39f6d67e06aa4eaec5793d0caf5))
+
 ## [1.2.15](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.14...v1.2.15) (2022-10-01)
 
 
