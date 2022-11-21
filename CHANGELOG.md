@@ -1,3 +1,10 @@
+## [1.2.20](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.19...v1.2.20) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([043ec9b](https://github.com/CoCreate-app/CoCreate-plaid/commit/043ec9b71fb948d76f85b4002ee3543a3c8c0064))
+
 ## [1.2.19](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.18...v1.2.19) (2022-11-21)
 
 
