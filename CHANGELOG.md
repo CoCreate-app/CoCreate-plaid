@@ -1,3 +1,11 @@
+## [1.2.22](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.21...v1.2.22) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([fc111f3](https://github.com/CoCreate-app/CoCreate-plaid/commit/fc111f3ac395af774d26c46376860adb4a96dad4))
+* workflow docs ([873cf91](https://github.com/CoCreate-app/CoCreate-plaid/commit/873cf9104c944a695895bbf273b7954c14271792))
+
 ## [1.2.21](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.20...v1.2.21) (2022-11-21)
 
 
