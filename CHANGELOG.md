@@ -1,3 +1,10 @@
+## [1.2.30](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.29...v1.2.30) (2022-12-02)
+
+
+### Bug Fixes
+
+* bump dependencies ([9b2953d](https://github.com/CoCreate-app/CoCreate-plaid/commit/9b2953d9cddfa1c48c3385c22127be1a44db76cf))
+
 ## [1.2.29](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.28...v1.2.29) (2022-11-28)
 
 
