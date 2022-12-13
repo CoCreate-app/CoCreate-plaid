@@ -1,3 +1,10 @@
+## [1.2.39](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.38...v1.2.39) (2022-12-13)
+
+
+### Bug Fixes
+
+* removed un used devDependencies ([317ffdf](https://github.com/CoCreate-app/CoCreate-plaid/commit/317ffdfd74c15354bce8b5d6e6dd6374a6c7a8b3))
+
 ## [1.2.38](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.37...v1.2.38) (2022-12-13)
 
 
