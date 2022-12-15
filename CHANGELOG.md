@@ -1,3 +1,10 @@
+## [1.2.40](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.39...v1.2.40) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([7c65925](https://github.com/CoCreate-app/CoCreate-plaid/commit/7c65925cbfb8463157d7af3e020ad473c5fef742))
+
 ## [1.2.39](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.38...v1.2.39) (2022-12-13)
 
 
