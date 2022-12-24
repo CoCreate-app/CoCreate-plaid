@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
- <title>Plaid</title>
+  <head>
+  <title>Plaid</title>
+  </head>     
+      <h1>Plad Link Bank</h1>
+      <body>
+  <form>
+    UserId: <input plaid='plaidGetLinkToken.userId' value='1000'></input>
+    LegalName: <input plaid='plaidGetLinkToken.legalName' value='Michle'></input>
+    PhoneNumber: <input plaid='plaidGetLinkToken.phoneNumber' value='+1 415 555 0123'></input>
+    Email: <input plaid='plaidGetLinkToken.email' value='topfreelancer81@gmail.com'></input>
+    <button actions='plaidGetLinkToken'>CreateBankLink</button>
+  </form>
 
- <head>     
-    <h1>Plad Link Bank</h1>
-    
-<form>
-  UserId: <input plaid='plaidGetLinkToken.userId' value='1000'></input>
-  LegalName: <input plaid='plaidGetLinkToken.legalName' value='Michle'></input>
-  PhoneNumber: <input plaid='plaidGetLinkToken.phoneNumber' value='+1 415 555 0123'></input>
-  Email: <input plaid='plaidGetLinkToken.email' value='topfreelancer81@gmail.com'></input>
-	<button actions='plaidGetLinkToken'>CreateBankLink</button>
-</form>
-
-<div template_id="plaidGetAccessToken" >
-  <div class="template card card margin:10px " 
-    value="{{data._id}}" 
-    template_id="plaidGetAccessToken" 
-    render-array="data">
-        <div class="display:flex justify-content:space-between align-items:center width:100%">
-          <div class="display:flex">
-            <div class="display:flex align-items:center">
-              <span class="icon status font-size:20px margin-right:10px"></span>
-            </div>
-            <div class="display:flex align-items:center  flex-wrap:wrap">
-              <h3 class="margin-right:10px" value="{{data.access_token}}">Access Token</h3>
+  <div template_id="plaidGetAccessToken" >
+    <div class="template card card margin:10px " 
+      value="{{data._id}}" 
+      template_id="plaidGetAccessToken" 
+      render-array="data">
+          <div class="display:flex justify-content:space-between align-items:center width:100%">
+            <div class="display:flex">
+              <div class="display:flex align-items:center">
+                <span class="icon status font-size:20px margin-right:10px"></span>
+              </div>
+              <div class="display:flex align-items:center  flex-wrap:wrap">
+                <h3 class="margin-right:10px" value="{{data.access_token}}">Access Token</h3>
+              </div>
             </div>
           </div>
-        </div>
+    </div>
   </div>
-</div>
 
 
-<!--CoCreateJS-->
 
-<!--CoCreate Plugins-->
+  <!--Plaid-->
+  <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
 
-
-<!--Plaid-->
-<script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
-
-<!--<script src="../dist/CoCreate-plaid.js"></script>
--->
-
-<script src="https://cdn.cocreate.app/1.34.3/CoCreate.min.js"></script>
+  <!--<script src="../dist/CoCreate-plaid.js"></script>-->
+  <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+  </body>
+</html>
