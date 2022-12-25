@@ -1,3 +1,10 @@
+## [1.2.47](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.46...v1.2.47) (2022-12-25)
+
+
+### Bug Fixes
+
+* update cdn to latest ([be3d60d](https://github.com/CoCreate-app/CoCreate-plaid/commit/be3d60d71850ced48bbdaaed5d02e22d20db6ee1))
+
 ## [1.2.46](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.45...v1.2.46) (2022-12-25)
 
 
