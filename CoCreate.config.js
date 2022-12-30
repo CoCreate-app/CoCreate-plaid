@@ -6,13 +6,12 @@ module.exports = {
     },
     "sources": [
         {
-            "entry": "./docs/index.html",
             "collection": "files",
             "document": {
                 "_id": "6029923de979fb17407e25c3",
                 "name": "index.html",
                 "path": "/docs/plaid/index.html",
-                "src": "{{source}}",
+                "src": "{{./docs/index.html}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
