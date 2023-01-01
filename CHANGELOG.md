@@ -1,3 +1,10 @@
+## [1.2.52](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.51...v1.2.52) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([399b163](https://github.com/CoCreate-app/CoCreate-plaid/commit/399b1636f4102b1157b9cfa5f3451e9f143de492))
+
 ## [1.2.51](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.50...v1.2.51) (2022-12-31)
 
 
