@@ -2,7 +2,7 @@ import api from '@cocreate/api'
 
 const CoCreatePlaid = {
 	name: 'plaid',
-	actions: {
+	endPoints: {
 		plaidGetLinkToken: {
 			response: function( data){
 				console.log(data)
@@ -31,7 +31,4 @@ const CoCreatePlaid = {
 	}	
 }
 
-api.init({
-	name: CoCreatePlaid.name, 
-	component:	CoCreatePlaid,
-});
+api.init(CoCreatePlaid);
