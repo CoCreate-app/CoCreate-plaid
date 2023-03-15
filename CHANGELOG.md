@@ -1,3 +1,10 @@
+## [1.2.64](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.63...v1.2.64) (2023-03-15)
+
+
+### Bug Fixes
+
+* actions object renamed to endPoints ([50b81fc](https://github.com/CoCreate-app/CoCreate-plaid/commit/50b81fc0186616f0642a7ff66ce1bc6f6c355980))
+
 ## [1.2.63](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.62...v1.2.63) (2023-02-01)
 
 
