@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.64...v1.3.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([6b58388](https://github.com/CoCreate-app/CoCreate-plaid/commit/6b583886cc9a0f976f214ea66e7d615502c7fc20))
+
 ## [1.2.64](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.2.63...v1.2.64) (2023-03-15)
 
 
