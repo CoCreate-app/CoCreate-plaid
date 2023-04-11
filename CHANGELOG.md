@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.3.3...v1.3.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([a301344](https://github.com/CoCreate-app/CoCreate-plaid/commit/a3013444a6ff6ae446e0357b819a6bc2ebd31b51))
+
 ## [1.3.3](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.3.2...v1.3.3) (2023-03-30)
 
 
