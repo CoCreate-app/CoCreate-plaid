@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.3.6...v1.4.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([a02fd72](https://github.com/CoCreate-app/CoCreate-plaid/commit/a02fd72ddc92d6d4be01f00282bf04f720df2dd7))
+
 ## [1.3.6](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.3.5...v1.3.6) (2023-04-11)
 
 
