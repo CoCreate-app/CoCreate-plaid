@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.0...v1.4.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([83df799](https://github.com/CoCreate-app/CoCreate-plaid/commit/83df799ae916ad30bd32b540ca35dc52bd3fdc3c))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.3.6...v1.4.0) (2023-04-24)
 
 
