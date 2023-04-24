@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.3...v1.4.4) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([302538c](https://github.com/CoCreate-app/CoCreate-plaid/commit/302538c9c18ae057bc71697a8b5f50b917fd6b0b))
+
 ## [1.4.3](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.2...v1.4.3) (2023-04-24)
 
 
