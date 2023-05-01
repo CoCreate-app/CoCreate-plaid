@@ -1,3 +1,10 @@
+## [1.4.7](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.6...v1.4.7) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([9c51621](https://github.com/CoCreate-app/CoCreate-plaid/commit/9c5162170d1c023679e108136fb2a97edff95e29))
+
 ## [1.4.6](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.5...v1.4.6) (2023-05-01)
 
 
