@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.5...v1.4.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([a471c47](https://github.com/CoCreate-app/CoCreate-plaid/commit/a471c47f8915d7d63489c581ffbb0546fe24402a))
+
 ## [1.4.5](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.4...v1.4.5) (2023-04-30)
 
 
