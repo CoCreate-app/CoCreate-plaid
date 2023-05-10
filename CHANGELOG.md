@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.8...v1.4.9) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([7d340a5](https://github.com/CoCreate-app/CoCreate-plaid/commit/7d340a5d67172a83a41d4f1e9d4a5c355cd48de9))
+
 ## [1.4.8](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.7...v1.4.8) (2023-05-06)
 
 
