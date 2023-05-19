@@ -1,3 +1,10 @@
+## [1.4.10](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.9...v1.4.10) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([2fb5ab9](https://github.com/CoCreate-app/CoCreate-plaid/commit/2fb5ab91dbbd82796be15276e40c289dda80bcb7))
+
 ## [1.4.9](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.8...v1.4.9) (2023-05-10)
 
 
