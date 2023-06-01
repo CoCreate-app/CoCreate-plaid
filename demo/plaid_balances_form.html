@@ -1,47 +1,69 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>plaid</title>
+    <head>
+        <title>plaid</title>
 
-    <style type="text/css">
-      .template{display:none}
-    </style>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+        </style>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-<body>
-    
-  <h1>Plaid-Balances</h1>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+    <body>
+        <h1>Plaid-Balances</h1>
 
-  <form>
-      AccssToken: <input plaid='plaidBalances.accessToken' value='access-sandbox-60d0a921-dfc3-445e-97be-bd8abc80d219'></input>
-      <button actions='plaidBalances'>Plaid Balances</button>
-  </form>
+        <form>
+            AccssToken:
+            <input
+                plaid="plaidBalances.accessToken"
+                value="access-sandbox-60d0a921-dfc3-445e-97be-bd8abc80d219" />
+            <button actions="plaidBalances">Plaid Balances</button>
+        </form>
 
-  <div template_id="plaidBalances" >
-    <div class="template card card margin:10px " 
-      value="{{data._id}}" 
-      template_id="plaidTransaction" 
-      render-array="data">
-          <div class="display:flex justify-content:space-between align-items:center width:100%">
-            <div class="display:flex">
-              <div class="display:flex align-items:center">
-                <span class="icon status font-size:20px margin-right:10px"></span>
-              </div>
-              <div class="display:flex align-items:center  flex-wrap:wrap">
-                <h3 class="margin-right:10px" value="{{data.account_id}}">AccountId</h3>
-                <span class="margin-right:10px" value="{{data.amount}}">Amount</span>
-                <span class="margin-right:10px" value="{{data.category_id}}">CategoryId</span>
-                <span class="margin-right:10px" value="{{data.date}}">Date</span>
-              </div>
+        <div template_id="plaidBalances">
+            <div
+                class="template card card margin:10px"
+                value="{{data._id}}"
+                template_id="plaidTransaction"
+                render-array="data">
+                <div
+                    class="display:flex justify-content:space-between align-items:center width:100%">
+                    <div class="display:flex">
+                        <div class="display:flex align-items:center">
+                            <span
+                                class="icon status font-size:20px margin-right:10px"></span>
+                        </div>
+                        <div
+                            class="display:flex align-items:center flex-wrap:wrap">
+                            <h3
+                                class="margin-right:10px"
+                                value="{{data.account_id}}">
+                                AccountId
+                            </h3>
+                            <span
+                                class="margin-right:10px"
+                                value="{{data.amount}}"
+                                >Amount</span
+                            >
+                            <span
+                                class="margin-right:10px"
+                                value="{{data.category_id}}"
+                                >CategoryId</span
+                            >
+                            <span
+                                class="margin-right:10px"
+                                value="{{data.date}}"
+                                >Date</span
+                            >
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-    </div>
-  </div>
+        </div>
 
-
-  <!--<script src="../dist/CoCreate-plaid.js"></script>-->
-  <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
-</body>
-
+        <!--<script src="../dist/CoCreate-plaid.js"></script>-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+    </body>
 </html>
