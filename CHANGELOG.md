@@ -1,3 +1,10 @@
+## [1.4.12](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.11...v1.4.12) (2023-06-02)
+
+
+### Bug Fixes
+
+* format demo html ([f08d45c](https://github.com/CoCreate-app/CoCreate-plaid/commit/f08d45ca4146a17d65eff04272fd72bf1b9b23ce))
+
 ## [1.4.11](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.10...v1.4.11) (2023-05-21)
 
 
