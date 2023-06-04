@@ -1,3 +1,11 @@
+## [1.4.14](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.13...v1.4.14) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([dcabe9f](https://github.com/CoCreate-app/CoCreate-plaid/commit/dcabe9f10589a607707dd1f54cca88a0f1ca3f00))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([21c7e1f](https://github.com/CoCreate-app/CoCreate-plaid/commit/21c7e1f77f0cd51331e6b5336bcb1f253bf9e9b9))
+
 ## [1.4.13](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.12...v1.4.13) (2023-06-04)
 
 
