@@ -1,3 +1,10 @@
+## [1.4.15](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.14...v1.4.15) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([2e649c7](https://github.com/CoCreate-app/CoCreate-plaid/commit/2e649c79177f11ec9a30cd39434f2e2de1f779b9))
+
 ## [1.4.14](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.13...v1.4.14) (2023-06-04)
 
 
