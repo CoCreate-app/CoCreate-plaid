@@ -1,3 +1,10 @@
+## [1.4.13](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.12...v1.4.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** worklow error solved by running node version 14 ([532e277](https://github.com/CoCreate-app/CoCreate-plaid/commit/532e277e97cb4fb8e727bd6ed712798da9800741))
+
 ## [1.4.12](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.11...v1.4.12) (2023-06-02)
 
 
