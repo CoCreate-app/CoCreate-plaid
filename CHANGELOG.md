@@ -1,3 +1,11 @@
+## [1.4.24](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.23...v1.4.24) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([9c5d475](https://github.com/CoCreate-app/CoCreate-plaid/commit/9c5d4758f4739a0800532e1821d75d15ea084f93))
+* testing workflow ([15baab4](https://github.com/CoCreate-app/CoCreate-plaid/commit/15baab4dbf96c0dbeb7621deca3ce62fe7e4da23))
+
 ## [1.4.23](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.22...v1.4.23) (2023-06-11)
 
 
