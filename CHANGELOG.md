@@ -1,3 +1,10 @@
+## [1.4.18](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.17...v1.4.18) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([b2ea396](https://github.com/CoCreate-app/CoCreate-plaid/commit/b2ea39656787f8856aa28587aaa5651e876cb9ad))
+
 ## [1.4.17](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.16...v1.4.17) (2023-06-10)
 
 
