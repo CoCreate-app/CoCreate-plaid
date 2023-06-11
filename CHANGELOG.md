@@ -1,3 +1,10 @@
+## [1.4.20](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.19...v1.4.20) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([620ed97](https://github.com/CoCreate-app/CoCreate-plaid/commit/620ed975337b54809eadf659c29873b99aa5b711))
+
 ## [1.4.19](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.18...v1.4.19) (2023-06-11)
 
 
