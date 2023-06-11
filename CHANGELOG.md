@@ -1,3 +1,10 @@
+## [1.4.28](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.27...v1.4.28) (2023-06-11)
+
+
+### Bug Fixes
+
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([8658725](https://github.com/CoCreate-app/CoCreate-plaid/commit/8658725931f9ce1dc74a6732bcfc2e48e2788396))
+
 ## [1.4.27](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.26...v1.4.27) (2023-06-11)
 
 
