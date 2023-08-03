@@ -4,8 +4,8 @@ module.exports = {
     "host": "",
     "sources": [
         {
-            "collection": "files",
-            "document": {
+            "array": "files",
+            "object": {
                 "_id": "6029923de979fb17407e25c3",
                 "name": "index.html",
                 "path": "/docs/plaid/index.html",

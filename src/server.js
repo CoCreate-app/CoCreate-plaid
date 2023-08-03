@@ -16,30 +16,30 @@ class CoCreatePlaid {
     }
 
     async sendPlaid(socket, data) {
-		let params = data['data'];
-		let environment;
-		let action = data['action'];
+        let params = data['data'];
+        let environment;
+        let action = data['action'];
         let plaid = false;
         const plaidInst = require('plaid');
-       
-        try{
-			let org = await api.getOrg(data, this.name);
-			if (params.environment){
-				environment = params['environment'];
-				delete params['environment'];  
-			} else {
-			  	environment = org.apis[this.name].environment;
-			}
+
+        try {
+            let org = await api.getOrg(data, this.name);
+            if (params.environment) {
+                environment = params['environment'];
+                delete params['environment'];
+            } else {
+                environment = org.apis[this.name].environment;
+            }
             plaid = new plaidInst.Client({
                 clientID: org.apis[this.name][environment].clientID,
                 secret: org.apis[this.name][environment].secret,
                 env: plaid.environments.sandbox,
             });
-      	 }catch(e){
-      	   	console.log(this.name+" : Error Connect to api",e)
-      	   	return false;
-      	 }
-        
+        } catch (e) {
+            console.log(this.name + " : Error Connect to api", e)
+            return false;
+        }
+
         try {
             let response
             switch (action) {
@@ -62,10 +62,10 @@ class CoCreatePlaid {
                 default:
                     break;
             }
-            this.wsManager.send(socket, this.name, { action, response })
-    
+            this.wsManager.send(socket, { method: this.name, action, response })
+
         } catch (error) {
-          this.handleError(socket, action, error)
+            this.handleError(socket, action, error)
         }
     }
 
@@ -74,7 +74,7 @@ class CoCreatePlaid {
             'object': 'error',
             'data': error || error.response || error.response.data || error.response.body || error.message || error,
         };
-        this.wsManager.send(socket, this.name, { action, response })
+        this.wsManager.send(socket, { method: this.name, action, response })
     }
 
     async plaidGetLinkToken(client, params) {
@@ -113,7 +113,7 @@ class CoCreatePlaid {
     }
 
     async plaidGetAccessToken(client, data) {
-        console.log("plaidGetAccessToke",data)
+        console.log("plaidGetAccessToke", data)
         let public_token = data;
         const response = await client.exchangePublicToken(public_token);
         return response
@@ -143,7 +143,7 @@ class CoCreatePlaid {
             .catch((err) => {
                 console.error(err.message);
             });
-            return response
+        return response
     }
 }
 
