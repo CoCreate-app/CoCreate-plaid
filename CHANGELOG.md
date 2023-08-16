@@ -1,3 +1,18 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.29...v1.5.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([9dad258](https://github.com/CoCreate-app/CoCreate-plaid/commit/9dad258d2c1aa5be3bb0a6d483b4f1d58cc89de2))
+* render-array and render-object attributes renamed to render ([54e88ee](https://github.com/CoCreate-app/CoCreate-plaid/commit/54e88ee25e1bd9d9122506a727699fba46f8bdab))
+* replace -target -selector ([760ad78](https://github.com/CoCreate-app/CoCreate-plaid/commit/760ad783e9df3f9d47254a888a0eb09f9ac57f14))
+* webpack.config and package.json make use of mode=production instead of process.env ([e83e8d4](https://github.com/CoCreate-app/CoCreate-plaid/commit/e83e8d4ba78fd3f8ded3c51f6e067dfa19d4946e))
+
+
+### Features
+
+* name attribute and variable renamed to key ([0804e6d](https://github.com/CoCreate-app/CoCreate-plaid/commit/0804e6dcc27efecd1ab7d357094ab7c23c0c6241))
+
 ## [1.4.29](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.28...v1.4.29) (2023-06-14)
 
 
