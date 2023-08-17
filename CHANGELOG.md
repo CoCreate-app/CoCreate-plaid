@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.5.0...v1.6.0) (2023-08-17)
+
+
+### Features
+
+* bump cocreate dependencies for the latest updates and features ([dc7e1ca](https://github.com/CoCreate-app/CoCreate-plaid/commit/dc7e1cafc52b97cc6085f1ff85fbdc7c9bd49fd5))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.4.29...v1.5.0) (2023-08-16)
 
 
