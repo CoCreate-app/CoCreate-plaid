@@ -1,3 +1,12 @@
+## [1.6.1](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.6.0...v1.6.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([f719011](https://github.com/CoCreate-app/CoCreate-plaid/commit/f7190118feb4791d9cb80ca36bc8438ae5f484a7))
+* replace cdn with /dist ([fd72293](https://github.com/CoCreate-app/CoCreate-plaid/commit/fd72293dee4d93f0bed94eb993caa79c36c80a98))
+* update file uploader ([1c0a717](https://github.com/CoCreate-app/CoCreate-plaid/commit/1c0a71792cb7cc313053a023abe4c15acc032803))
+
 # [1.6.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.5.0...v1.6.0) (2023-08-17)
 
 
