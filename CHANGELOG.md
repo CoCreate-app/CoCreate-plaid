@@ -1,3 +1,11 @@
+## [1.7.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.7.1...v1.7.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([a7f3981](https://github.com/CoCreate-app/CoCreate-plaid/commit/a7f3981ee3eebec55709f002ea83eedd19b4c2e2))
+* Update CoCreate depndencies to latest versions ([27bd23e](https://github.com/CoCreate-app/CoCreate-plaid/commit/27bd23ec30b5f49e2c0a3637a342ef335e3263fb))
+
 ## [1.7.1](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.7.0...v1.7.1) (2023-08-21)
 
 
