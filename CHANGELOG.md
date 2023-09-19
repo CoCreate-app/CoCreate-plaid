@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.7.2...v1.8.0) (2023-09-19)
+
+
+### Features
+
+* Update CoCreate dependencies to their latest versions ([6146eb3](https://github.com/CoCreate-app/CoCreate-plaid/commit/6146eb3f54ab635af9933334f04a9975e24b7d99))
+
 ## [1.7.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.7.1...v1.7.2) (2023-09-18)
 
 
