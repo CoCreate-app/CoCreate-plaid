@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/plaid/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "plaid",
                 "content-type": "{{content-type}}",
