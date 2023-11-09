@@ -1,3 +1,12 @@
+## [1.8.5](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.8.4...v1.8.5) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([eab8792](https://github.com/CoCreate-app/CoCreate-plaid/commit/eab87923fb86bc4b2b9a30fb2af2d49b86c3126d))
+* update dependencies to the lates versions ([c97b6a3](https://github.com/CoCreate-app/CoCreate-plaid/commit/c97b6a37a427d148451dd83f8d470483730ada06))
+* update host ([664fad0](https://github.com/CoCreate-app/CoCreate-plaid/commit/664fad0c20f254fef316356cbeeb6a042847db43))
+
 ## [1.8.4](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.8.3...v1.8.4) (2023-10-25)
 
 
