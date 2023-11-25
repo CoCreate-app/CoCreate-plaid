@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.9.0...v1.10.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* update nav, edit button and css path ([14caab6](https://github.com/CoCreate-app/CoCreate-plaid/commit/14caab619d6d44c41d75e49949c3c1c3480d26c1))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([ce7557d](https://github.com/CoCreate-app/CoCreate-plaid/commit/ce7557dfbe2862725c3177829ac496eb1a401fa0))
+
 # [1.9.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.8.6...v1.9.0) (2023-11-19)
 
 
