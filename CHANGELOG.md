@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.1...v1.11.2) (2024-02-03)
+
+
+### Bug Fixes
+
+*  removed from clinet.js ([bfabeb2](https://github.com/CoCreate-app/CoCreate-plaid/commit/bfabeb29437dfb5727c76b4feeb12571c149273a))
+
 ## [1.11.1](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.0...v1.11.1) (2023-12-09)
 
 
