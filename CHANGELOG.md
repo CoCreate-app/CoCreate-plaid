@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.2...v1.11.3) (2024-02-05)
+
+
+### Bug Fixes
+
+* Removed https://cdn.cocreate.app/latest/CoCreate.min.css ([d6d0738](https://github.com/CoCreate-app/CoCreate-plaid/commit/d6d07385a670fc98bd2209b1ca374d8e42385121))
+
 ## [1.11.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.1...v1.11.2) (2024-02-03)
 
 
