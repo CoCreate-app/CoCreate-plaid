@@ -1,3 +1,11 @@
+## [1.11.5](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.4...v1.11.5) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([17ecc60](https://github.com/CoCreate-app/CoCreate-plaid/commit/17ecc603da27e2a035393574459d6cdbc793575a))
+* svg icon class ([1319532](https://github.com/CoCreate-app/CoCreate-plaid/commit/1319532323aede484af82edd566d5360564baaba))
+
 ## [1.11.4](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.3...v1.11.4) (2024-04-29)
 
 
