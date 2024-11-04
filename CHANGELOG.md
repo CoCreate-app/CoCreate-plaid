@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.5...v1.12.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* pretier.config.js and file formating ([b2b5c7e](https://github.com/CoCreate-app/CoCreate-plaid/commit/b2b5c7ef909ac21782566c7d7a3b361d47cc6d65))
+
+
+### Features
+
+* add prettier.config.js and format files ([7b85110](https://github.com/CoCreate-app/CoCreate-plaid/commit/7b8511063ca22ac170deae38c18fea3a5e4f76c3))
+
 ## [1.11.5](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.4...v1.11.5) (2024-06-12)
 
 
