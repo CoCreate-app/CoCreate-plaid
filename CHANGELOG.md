@@ -1,3 +1,13 @@
+## [1.12.1](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.12.0...v1.12.1) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([bc4ffe7](https://github.com/CoCreate-app/CoCreate-plaid/commit/bc4ffe7218b5b86c5c2e19b77bf3c25a45687a15))
+* update query attributes ([88d1288](https://github.com/CoCreate-app/CoCreate-plaid/commit/88d12885f42e5f6e21467c05035b14ea1b7c6c07))
+* updated cocreate modules versions ([24eb6e9](https://github.com/CoCreate-app/CoCreate-plaid/commit/24eb6e961036fd51a17909d162f9fbc982ad33a7))
+* webpack.config and devdependencies ([0c42819](https://github.com/CoCreate-app/CoCreate-plaid/commit/0c428193e499267f7206621d7c1b0f2ac0258801))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.11.5...v1.12.0) (2024-11-04)
 
 
