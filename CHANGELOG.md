@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.12.2...v1.12.3) (2026-02-04)
+
+
+### Bug Fixes
+
+* update worklow ([e3e12ec](https://github.com/CoCreate-app/CoCreate-plaid/commit/e3e12ec0bedcc2c9b1726850273a9606d65feebe))
+
 ## [1.12.2](https://github.com/CoCreate-app/CoCreate-plaid/compare/v1.12.1...v1.12.2) (2025-05-01)
 
 
